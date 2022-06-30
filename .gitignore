@@ -1,0 +1,166 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Compiled output2
+/Client/dist
+/Client/tmp
+/Client/out-tsc
+/Client/bazel-out
+
+# Node2
+/Client/node_modules
+Client/npm-debug.log
+Client/yarn-error.log
+
+# IDEs and editors2
+Client/.idea/
+Client/.project
+Client/.classpath
+Client/.c9/
+Client/*.launch
+Client/.settings/
+Client/*.sublime-workspace
+
+# Visual Studio Code2
+Client/.vscode/*
+Client/!.vscode/settings.json
+Client/!.vscode/tasks.json
+Client/!.vscode/launch.json
+Client/!.vscode/extensions.json
+Client/.history/*
+
+# Miscellaneous2
+/Client/.angular/cache
+/Client/.sass-cache/
+/Client/connect.lock
+/Client/coverage
+/Client/libpeerconnection.log
+Client/testem.log
+/Client/typings
+
+# System files2
+Client/.DS_Store
+Client/Thumbs.db
+
+# Compiled output3
+/Server/dist
+/Server/tmp
+/Server/out-tsc
+/Server/bazel-out
+
+# Node3
+/Server/node_modules
+Server/npm-debug.log
+Server/yarn-error.log
+
+# IDEs and editors3
+Server/.idea/
+Server/.project
+Server/.classpath
+Server/.c9/
+Server/*.launch
+Server/.settings/
+Server/*.sublime-workspace
+
+# Visual Studio Code3
+Server/.vscode/*
+Server/!.vscode/settings.json
+Server/!.vscode/tasks.json
+Server/!.vscode/launch.json
+Server/!.vscode/extensions.json
+Server/.history/*
+
+# Miscellaneous3
+/Server/.angular/cache
+/Server/.sass-cache/
+/Server/connect.lock
+/Server/coverage
+/Server/libpeerconnection.log
+Server/testem.log
+/Server/typings
+
+# System files3
+Server/.DS_Store
+Server/Thumbs.db
+
+# Compiled output3
+/Server/dist
+/Server/tmp
+/Server/out-tsc
+/Server/bazel-out
+
+# Node2
+/Server/node_modules
+Server/npm-debug.log
+Server/yarn-error.log
+
+# IDEs and editors3
+Server/.idea/
+Server/.project
+Server/.classpath
+Server/.c9/
+Server/*.launch
+Server/.settings/
+Server/*.sublime-workspace
+
+# Visual Studio Code3
+Server/.vscode/*
+Server/!.vscode/settings.json
+Server/!.vscode/tasks.json
+Server/!.vscode/launch.json
+Server/!.vscode/extensions.json
+Server/.history/*
+
+# Miscellaneous3
+/Server/.angular/cache
+/Server/.sass-cache/
+/Server/connect.lock
+/Server/coverage
+/Server/libpeerconnection.log
+Server/testem.log
+/Server/typings
+
+# System files3
+Server/.DS_Store
+Server/Thumbs.db
+
