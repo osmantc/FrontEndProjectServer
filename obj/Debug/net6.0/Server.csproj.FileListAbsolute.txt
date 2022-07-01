@@ -52,3 +52,17 @@ C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\obj\Debug\net6.0\
 C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\obj\Debug\net6.0\Server.pdb
 C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
 C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\obj\Debug\net6.0\ref\Server.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\DevExtreme.AspNet.Data.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\DevExtreme.AspNet.Mvc.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\DevExtreme.AspNet.Mvc.xml
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
