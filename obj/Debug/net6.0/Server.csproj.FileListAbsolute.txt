@@ -66,3 +66,5 @@ C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\
 C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
 C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\429883\Documents\Sources\repos\FrontEndProject\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
