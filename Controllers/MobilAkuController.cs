@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Server.DataAccess;
+using FrontEndProjectServer.DataAccess.ViewModel;
 using DevExtreme.AspNet.Data;
 using DevExtreme.AspNet.Mvc;
 using Server.DataAccess.Model;
@@ -35,7 +36,52 @@ namespace Server.Controllers
             try
             {
                 _logger.LogInformation("çalıştım.");
-                return Json(await DataSourceLoader.LoadAsync(_context.MobilAku.Include(x => x.Cities).Include(x => x.Regions), loadOptions));
+
+                var result = await DataSourceLoader.LoadAsync(_context.MobilAku.Include(x => x.Cities).Include(x => x.Regions), loadOptions);
+
+                //TODO: ilerde performans için listeyi result.TotalCount ile kur ve test et, şimdilik böyle
+                List<MobilAkuVM> newData = new List<MobilAkuVM>();
+
+                foreach (var item in result.data)
+                {
+                    MobilAku akuNesne = (MobilAku)item;
+
+                    var akuVM = new MobilAkuVM()
+                    {
+                        id = akuNesne.id,
+                        tenant_id = akuNesne.tenant_id,
+                        report_file_process_id = akuNesne.report_file_process_id,
+                        location = akuNesne.location,
+                        asset_num = akuNesne.asset_num,
+                        n_of_ac = akuNesne.n_of_ac,
+                        n_of_ne = akuNesne.n_of_ne,
+                        battery_age = akuNesne.battery_age,
+                        n_of_partial_charge = akuNesne.n_of_partial_charge,
+                        n_of_generator = akuNesne.n_of_generator,
+                        n_of_air_con = akuNesne.n_of_air_con,
+                        max_ac_duration = akuNesne.max_ac_duration,
+                        mx_afad = akuNesne.mx_afad,
+                        totalpower_loc = akuNesne.totalpower_loc,
+                        ideal_working_hour = akuNesne.ideal_working_hour,
+                        back_sites = akuNesne.back_sites,
+                        technology = akuNesne.technology,
+                        remaining_battery_lifetime = akuNesne.remaining_battery_lifetime,
+                        remaining_battery_lifetime_cast_int = akuNesne.remaining_battery_lifetime_cast_int,
+                        recommendation = akuNesne.recommendation,
+                        additional_info = akuNesne.additional_info,
+                        current_date = akuNesne.current_date,
+                        RegionsId = akuNesne.RegionsId,
+                        CitiesId = akuNesne.CitiesId,
+                        RegionsName = akuNesne.Regions.name,
+                        CitiesName = akuNesne.Cities.name,
+                    };
+
+                    newData.Add(akuVM);
+                }
+
+                result.data = newData;
+
+                return Json(result);
             }
             catch (Exception ex)
             {
