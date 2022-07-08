@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//TODO:Production için hardening policy yazılacak, test için all access şuan
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
 {
     policy.WithOrigins("http://localhost:4200", "http://localhost:4200:80")
@@ -20,8 +22,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<MyDbContext>(options =>
 {
-    // options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionEv"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+    // options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionEv"));
 });
 
 var app = builder.Build();
