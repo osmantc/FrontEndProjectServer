@@ -19,9 +19,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqLite" Version="6.0.6" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     
-    <Reference Include="DevExtreme.AspNet.Mvc">
+    <!-- <Reference Include="DevExtreme.AspNet.Mvc">
     <HintPath>C:\Program Files\DevExpress 22.1\DevExtreme\System\DevExtreme\Bin\AspNet\DevExtreme.AspNet.Mvc.dll</HintPath>
-    </Reference>
+    </Reference> -->
     
   </ItemGroup>
 
