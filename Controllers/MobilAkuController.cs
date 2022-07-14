@@ -30,6 +30,8 @@ namespace Server.Controllers
             _logger = logger;
         }
 
+        //! Testte tek bir ViewModel kullandığımdan (test olduğu için) tüm propertyler gidiyor, ileride sadece aküVM ile gerekli olan (ilk etapta gösterilen 5 property) yollanacak.
+        //! şimdilik hepsini yolluyorum.
         [HttpGet]
         public async Task<IActionResult> MobilAkus(DataSourceLoadOptions loadOptions)
         {
@@ -202,6 +204,8 @@ namespace Server.Controllers
 
         }
 
+        //! Detay bilgisi almak için kullanıyorum. Testte tek bir ViewModel kullandığımdan (test olduğu için) tüm propertyler gidiyor, ileride sadece detayVM ile gerekliler yollanacak.
+        //! şimdilik hepsini yolluyorum.
         [Microsoft.AspNetCore.Mvc.HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
