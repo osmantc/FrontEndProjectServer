@@ -180,7 +180,7 @@ namespace Server.Controllers
 
 
         //*Additional endpoints
-        [Microsoft.AspNetCore.Mvc.HttpGet]
+        [HttpGet]
         public async Task<IActionResult> Get()
         {
             try
@@ -206,7 +206,7 @@ namespace Server.Controllers
 
         //! Detay bilgisi almak için kullanıyorum. Testte tek bir ViewModel kullandığımdan (test olduğu için) tüm propertyler gidiyor, ileride sadece detayVM ile gerekliler yollanacak.
         //! şimdilik hepsini yolluyorum.
-        [Microsoft.AspNetCore.Mvc.HttpGet("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
             try
@@ -222,6 +222,22 @@ namespace Server.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Markers()
+        {
+            var data = await _context.Cities.Select(x => new MarkerVM()
+            {
+                location = x.latitude + ", " + x.longitude,
+                tooltip = new Tooltip()
+                {
+                    text = x.name,
+                }
+            })
+            .ToListAsync();
+
+            return Ok(data);
         }
 
         //TODO:Dökümantasyona göre (kendi api'si string olarak sadece gerekli datayı yolluyor, tam bir nesne yollamıyor automapper'da ekstra config) (bir sıkıntı çıkmasın düzgün çalıştığını göreyim) şimdilik bu şekilde, ileride direkt AutoMapper ile.
